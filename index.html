@@ -56,6 +56,36 @@
             font-size: 0.8em; 
             color: #666; 
         }
+        .resource-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.resource-links li {
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border-left: 3px solid #8b0000;
+}
+.resource-links a {
+  color: #00008b;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+.resource-links a:hover {
+  background-color: #e8e8e8;
+  color: #8b0000;
+  text-decoration: none;
+}
+.link-note {
+  font-size: 0.85em;
+  color: #666;
+  margin-left: 8px;
+  font-style: italic;
+}
     </style>
 </head>
 <body>
@@ -80,9 +110,21 @@
         <img src="images/hikaye.png" alt="Dedem Korkut Hikayesi" width="600">
         <figcaption>Dedem Korkut, Onkositik Böbrek tümörlerine isim verenlerin fantastik hikayesini anlatıyor</figcaption>
     </figure>
-<ul>
-  <li><a href="https://www.youtube.com/live/5v0JMDXTJnM" target="_blank" rel="noopener noreferrer">Sambit Mohanty Memorial Series Eosinophillic Tumours of Kidney Dr Mahmut Akgul - Toplantı kaydı. Altyazı kullanılabilir.</a></li>
-  <li><a href="https://metinciris.github.io/renal_oncocytic/" target="_blank" rel="noopener noreferrer">Çalışma sayfası - Practical Approach to Diagnosis of Oncocytic Renal Tumors (İngilizce)</a></li>
+<ul class="resource-links">
+  <li>
+    <a href="https://www.youtube.com/live/5v0JMDXTJnM" target="_blank" rel="noopener noreferrer">
+      <img src="https://www.youtube.com/favicon.ico" alt="YouTube" width="16" height="16" style="vertical-align:middle;margin-right:5px;">
+      Sambit Mohanty Memorial Series - Eosinophilic Tumours of Kidney (Dr. Mahmut Akgül) - Toplantı kaydı
+      <span class="link-note">(Altyazı desteği mevcut)</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://metinciris.github.io/renal_oncocytic/" target="_blank" rel="noopener noreferrer">
+      <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" width="16" height="16" style="vertical-align:middle;margin-right:5px;">
+      Pratik Rehber: Böbreğin Onkositik Tümörlerinde Tanı Yaklaşımı
+      <span class="link-note">(İngilizce kaynak)</span>
+    </a>
+  </li>
 </ul>
 
     <footer>Eğitimsel Kaynak: Dr. Mahmut Akgül'ün Sunumundan Esinlenildi | 2025</footer>
